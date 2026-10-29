@@ -1,0 +1,15 @@
+course setup receipt v0.9.102
+time: 2026-10-27T22:05:10-0700
+os: Windows 11
+python: 3.15.0
+key-fingerprint: c1b69c3b66ab
+10-folder: pass (attempts 2) harness.py and systemprompt.md are in p04
+15-files: pass (attempts 2) Project 4's files are in p04: SPEC.md, questions.csv, the articles folder, both skills, the new systemprompt.md, and the switch file for Project 4.
+17-tidy: FAIL (attempts 6) Project 3's files are still at the top of p04: index.json. Make a folder named project3 inside p04 and move them into it. Nothing gets deleted; Project 4 just never uses them.
+20-key: pass (attempts 2) key works - 4 models answer to it
+30-chat: pass (attempts 2) extension installed, pointed at the course gateway, agent mode off
+35-course-tools: pass (attempts 2) CSE 490 Course Tools 0.5.6 is installed - it keeps your chat log and packages your turn-in once your project files are in place
+37-chat-log: pass (attempts 2) CSE 490 Course Tools is running here (cse490-tools 0.5.3) and your chats are reaching the log: 22 turns in logs/_chatlog.md so far
+40-harness: FAIL (attempts 5) The harness remembers, but asked to read SPEC.md it never quoted the file: the read tool from Project 3 isn't in the loop. When the model asks to read a file, the harness reads it and sends the contents back as the next message.
+walkthrough: {"17-tidy": {"advice": 3, "checks": 3, "seconds": 198, "stuck": 1}, "40-harness": {"advice": 1, "checks": 2, "seconds": 36, "stuck": 0}}
+questions: {"10-folder": 2, "17-tidy": 5, "40-harness": 10}
